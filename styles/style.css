@@ -1,7 +1,7 @@
 *, *::before, *::after {
-    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html, body {
@@ -11,15 +11,241 @@ html, body {
 html {
     height: 100%;
     font-size: 100%;
+    color: #3A2815;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
 
-p{
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 19px;
-  font-weight: 100;
+p {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 100;
+}
+
+.landing {
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: #ECEAE4;
+    padding-bottom: 0;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    background-color: #A4EAE6;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* GRID */
+/*.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.container:before,
+.container:after {
+    content: " ";
+    display: table;
+}
+.container:after {
+    clear:both;
+}
+
+.one-third {
+    width: 96%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    margin: 0 2% 20px;
+}*/
+
+/* HERO */
+.hero-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.hero-description {
+    text-align: center;
+}
+
+/*.hero-content {
+    background: #ECEAE4 url("../assets/images/coffee_shop.jpeg") top center no-repeat;
+    background: url("../assets/images/coffee_shop.jpeg") top center no-repeat, linear-gradient(-180deg, #EAEAEA 31%, #C3C3C3 84%, #7A7A7A 100%);
+    background-size: cover;
+    max-width: 100%;
+    height: 450px;
+}*/
+
+.hero-image {
+    max-width: 100%;
+    margin: auto;
+}
+
+.hero-image .hero-background {
+    max-width: 100%;
+}
+
+.hero-image::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%); -180deg, #EAEAEA 31%, #C3C3C3 84%, #7A7A7A 100%
+    margin-top: -150px;
+    height: 150px;
+    width: 100%;
+    content: '';
+}
+
+/* ABOUT */
+.about {
+    background-color: #A4EAE6;
+    /*height: 400px;*/
+    text-align: center;
+    display: block;
+    position: relative;
+    margin: 0;
+}
+
+.about-title {
+    font-size: 36px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.about ul li {
+    list-style-type: none;
+    display: inline-block;
+    max-width: 250px;
+    margin: 20px auto;
+}
+
+.about h2 span {
+    font-weight: bolder;
+}
+
+/* FLAVORS */
+.flavors {
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+.limited {
+    text-transform: uppercase;
+    color: #A4EAE6;
+}
+
+/* PUG OF THE MONTH */
+.potm {
+    background-color: #A4EAE6;
+    overflow: hidden;
+}
+
+.chloe-image {
+    margin: 30px 0 30px 150px;
+    /*float: left;*/
+    position: relative;
+    float: left;
+}
+
+.chloe {
+    font-size: 36px;
+    text-transform: uppercase;
+    /*float: left;*/
+    margin-left: 20px;
+    float: left;
+}
+
+.chloe-description {
+    float: left;
+    width: 350px;
+    margin-left: 20px;
+    margin-top: 0;
+}
+
+.potm button {
+    float: left;
+    background-color: #ECEAE4;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+
+/* SOCIAL MEDIA */
+.social-media {
+    background-color: #FFFFFF;
+    overflow: auto;
+    padding-bottom: 20px;
+}
+
+.social-media h1 {
+    text-align: center;
+    clear: left;
+    font-size: 48px;
+    font-weight: 100;
+    margin: 0;
+    padding: 16px 0;
+}
+
+.insta-image {
+    width: 225px;
+    height: 225px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    float: left;
+}
+
+/* TESTIMONIALS */
+.testimonial {
+    background-color: #FFFFFF;
+    padding: 0 16px;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.quote {
+    font-size: 22px;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    text-align: center;
+    line-height: 36px;
+    font-style: italic;
+}
+
+.test-one {
+    float: left;
+    width: 350px;
+    margin-left: 10%;
+}
+
+.test-two {
+    float: left;
+    margin-left: 5%;
+    width: 350px;
+}
+
+.name {
+    float: right;
+    font-size: 18px;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
