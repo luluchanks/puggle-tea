@@ -26,10 +26,9 @@ p {
 }
 
 .landing {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 12%;
+    padding-right: 12%;
     background-color: #ECEAE4;
-    padding-bottom: 0;
 }
 
 button {
@@ -44,6 +43,10 @@ button {
     text-decoration: none;
     display: inline-block;
     font-weight: bold;
+}
+
+.container {
+    padding: 0 20px;
 }
 
 /* GRID */
@@ -90,13 +93,10 @@ button {
     text-align: center;
 }
 
-/*.hero-content {
-    background: #ECEAE4 url("../assets/images/coffee_shop.jpeg") top center no-repeat;
-    background: url("../assets/images/coffee_shop.jpeg") top center no-repeat, linear-gradient(-180deg, #EAEAEA 31%, #C3C3C3 84%, #7A7A7A 100%);
-    background-size: cover;
-    max-width: 100%;
-    height: 450px;
-}*/
+.hero-details {
+    margin-top: -530px;
+    margin-bottom: 110px;
+}
 
 .hero-image {
     max-width: 100%;
@@ -110,7 +110,7 @@ button {
 .hero-image::after {
     display: block;
     position: relative;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%); -180deg, #EAEAEA 31%, #C3C3C3 84%, #7A7A7A 100%
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%); -180deg, #EAEAEA 31%, #C3C3C3 84%, #7A7A7A 100%;
     margin-top: -150px;
     height: 150px;
     width: 100%;
@@ -125,23 +125,32 @@ button {
     display: block;
     position: relative;
     margin: 0;
+    padding-bottom: 20px;
 }
 
 .about-title {
     font-size: 36px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
-.about ul li {
+.one-third {
     list-style-type: none;
     display: inline-block;
-    max-width: 250px;
-    margin: 20px auto;
+    max-width: 26%;
+    margin: 0 2%;
 }
 
-.about h2 span {
-    font-weight: bolder;
+img.about-pug {
+    margin-bottom: -10px;
+}
+
+img.about-tea {
+    margin-bottom: 5px;
+}
+
+img.about-heart {
+    margin-bottom: 12px;
 }
 
 /* FLAVORS */
@@ -150,9 +159,93 @@ button {
     margin: 0;
 }
 
+.half {
+    padding-top: 20px;
+}
+
 .limited {
     text-transform: uppercase;
     color: #A4EAE6;
+}
+
+.left-image {
+    float: left;
+}
+
+.pug-flavor-left {
+    margin-left: 40px;
+    float: left;
+}
+
+.rose-tea .limited {
+    margin-top: 17px;
+    margin-bottom: 40px;
+    margin-left: 21px;
+    float: left;
+    font-size: 22px;
+}
+
+.rose-tea .flavor-name-left {
+    margin: -35px 20px;
+    float: left;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.flavor-description-left {
+    float: right;
+    margin-left: 20px;
+    width: 54%;
+}
+
+.served-left {
+    margin-left: 21px;
+    margin-top: -5px;
+    float: left;
+}
+
+img.toppings-one {
+    float: left;
+    margin-top: 20px;
+    margin-left: -102px;
+}
+
+img.toppings-two {
+    float: left;
+    margin-top: 20px;
+    margin-left: -15px;
+}
+
+
+p.topping-name-one {
+    float: left;
+    margin-top: 83px;
+    margin-left: -100px;
+}
+
+p.topping-name-two {
+    float: left;
+    margin-top: 84px;
+    margin-left: -57px;
+}
+
+.button-left {
+    float: left;
+    margin-top: 104px;
+    margin-left: -150px;
+}
+
+.milk-tea {
+    clear: both;
+}
+
+.thai-tea {
+    clear: both;
+}
+
+.matcha-tea {
+    clear: both;
 }
 
 /* PUG OF THE MONTH */
@@ -163,7 +256,6 @@ button {
 
 .chloe-image {
     margin: 30px 0 30px 150px;
-    /*float: left;*/
     position: relative;
     float: left;
 }
@@ -171,7 +263,6 @@ button {
 .chloe {
     font-size: 36px;
     text-transform: uppercase;
-    /*float: left;*/
     margin-left: 20px;
     float: left;
 }
@@ -187,7 +278,7 @@ button {
     float: left;
     background-color: #ECEAE4;
     margin-left: 20px;
-    margin-top: 15px;
+    margin-top: 21px;
 }
 
 
@@ -200,19 +291,16 @@ button {
 
 .social-media h1 {
     text-align: center;
-    clear: left;
     font-size: 48px;
-    font-weight: 100;
+    font-weight: lighter;
     margin: 0;
-    padding: 16px 0;
+    padding: 20px 0;
 }
 
 .insta-image {
-    width: 225px;
-    height: 225px;
-    padding: 5px;
-    margin-left: 10px;
-    margin-bottom: 0;
+    width: 25%;
+    height: 25%;
+    padding: 4px;
     float: left;
 }
 
@@ -220,7 +308,7 @@ button {
 .testimonial {
     background-color: #FFFFFF;
     padding: 0 16px;
-    margin-top: 0;
+    margin-top: -2%;
     overflow: hidden;
 }
 
@@ -235,12 +323,12 @@ button {
 .test-one {
     float: left;
     width: 350px;
-    margin-left: 10%;
+    margin-left: 7%;
 }
 
 .test-two {
     float: left;
-    margin-left: 5%;
+    margin-left: 10%;
     width: 350px;
 }
 
@@ -248,4 +336,79 @@ button {
     float: right;
     font-size: 18px;
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    margin-bottom: 9%;
+    margin-top: 0%;
+}
+
+/* VISIT US */
+section.visit-us {
+    background-color: #FFFFFF;
+    overflow: auto;
+    padding-bottom: 2%;
+}
+
+img.map {
+    float: left;
+}
+
+img.sign {
+    margin-left: 2%;
+    float: left;
+}
+
+.location-info {
+    float: left;
+}
+
+section.visit-us h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 15% 13% 0;
+}
+
+section.visit-us h5 {
+   margin: 10% 14%;;
+   font-size: 18px;
+   font-weight: 700;
+}
+
+section.visit-us p {
+    font-weight: bold;
+    margin: 7% 14% 0;;
+}
+
+section.visit-us ul li {
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: -2%;
+}
+
+/* FOOTER */
+footer {
+    background-color: #A4EAE6;
+    margin-bottom: -2%;
+    clear: both;
+}
+
+.icons {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.icons a {
+    font-size: 28px;
+    color: #3A2815;
+}
+
+.footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2% 0 1% 0;
+}
+
+.copyright {
+    text-align: center;
+    padding-bottom: 20px;
 }

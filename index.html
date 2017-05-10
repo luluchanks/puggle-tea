@@ -17,56 +17,59 @@
 
 
     <body class="landing">
-        <section class="container hero-content">
+        <section class="hero-content">
             <div class="hero-image">
                 <img src="assets/images/coffee_shop.jpeg" class="hero-background" />
             </div>
-            <img src="assets/images/logo.png" alt="Puggle Tea Logo" class="hero-logo">
-            <h1 class="hero-title">BUY A CUP, HELP A PUP!</h1>
-            <p class="hero-description">A portion of our monthly profits go<br>towards helping pugs in need!</p>
+            <div class="hero-details">
+                <img src="assets/images/logo.png" alt="Puggle Tea Logo" class="hero-logo">
+                <h1 class="hero-title">BUY A CUP, HELP A PUP!</h1>
+                <p class="hero-description">A portion of our monthly profits go<br>towards helping pugs in need!</p>
+            </div>
         </section>
 
-        <section class="container about">
+        <section class="about">
             <h2 class="about-title"><span>ABOUT US:</span> PUGS, PURITY, & PASSION</h2>
-            <ul class="container">
-              <li class="one-third">
+              <div class="one-third">
                   <img src="assets/images/pug.png" alt="pug" class="about-pug">
-                  <p class="point-description">We love <strong>pugs</strong>.
+                  <p class="point-description">
                     <br>A portion of our monthly profits go towards the <strong><em>Pug Lives Matter Foundation</em></strong>
                     for the rescue efforts of pugs across America. Each month we tell the story of a pug you're
                     helping just by enjoying our products!</p>
-              </li>
-              <li class="one-third">
+              </div>
+              <div class="one-third middle">
                   <img src="assets/images/bubble_tea.png" alt="tea" class="about-tea">
                   <p class="point-description">We value <strong>purity</strong> in all of our ingredients and products.
                     Everything used to make our teas are organic, high-quality, and homemade.  Our products are made to
                     not only taste good, but also make you feel good.</p>
-              </liv>
+              </div>
 
-              <li class="one-third">
+              <div class="one-third">
                   <img src="assets/images/hearts.png" alt="heart" class="about-heart">
                   <p class="point-description">We are <strong>passionate</strong> about our products, our business,
                     our customers, and our pugs. We want everyone to have the best experience possible starting from
                     when you first enter our doors to when you finish your tea!</p>
-              </li>
-            </ul>
+              </div>
+
         </section>
 
         <section class="container flavors">
             <div class="half rose-tea">
-                <img src="assets/images/strawberry_rose_tea.png" alt="Strawberry Rose Tea" class="left-image">
-                <img src="assets/images/pug_rose.png" alt="Rose Pug" class="pug-flavor">
+                <img src="assets/images/strawberry_rose_tea.png" alt="StrawberryRose Tea" class="left-image">
+                <img src="assets/images/pug_rose.png" alt="Rose Pug" class="pug-flavor-left">
                 <h4 class="limited">Limited Edition</h4>
-                <h2 class="flavor-name">Strawberry Rose Tea</h4>
-                <p class="flavor-description">Indulge in our limited edition sweet Strawberry Rose Tea
+                <h2 class="flavor-name-left">Strawberry<br>Rose Tea</h4>
+                <p class="flavor-description-left">Indulge in our limited edition sweet Strawberry Rose Tea
                    made with almond milk and fresh fruit toppings.  This paradise of flavors is a
                    perfect infusion of luscious fruit with warm white tea leaves.</p>
-                <p>Best served with:</p>
-                <img src="assets/images/fruit.png" alt="Fruit" class="toppings">
-                <p>Fresh Fruit</p>
-                <img src="assets/images/tapioca.png" alt="Tapioca" class="toppings">
-                <p>Tapioca</p>
-                <button type="button">Learn More</button>
+                <p class="served-left">Best served with:</p>
+                <div class="toppings">
+                    <img src="assets/images/fruit.png" alt="Fruit" class="toppings-one">
+                    <p class="topping-name-one">Fresh Fruit</p>
+                    <img src="assets/images/tapioca.png" alt="Tapioca" class="toppings-two">
+                    <p class="topping-name-two">Tapioca</p>
+                </div>
+                <button class="button-left">Learn More</button>
             </div>
 
             <div class="half milk-tea">
@@ -83,21 +86,25 @@
                 <p>Grass Jelly</p>
                 <img src="assets/images/fruit.png" alt="Fresh Fruit" class="toppings">
                 <p>Fresh Fruit</p>
-                <button type="button">Learn More</button>
+                <button class="button-right">Learn More</button>
             </div>
 
             <div class="half thai-tea">
                 <img src="assets/images/thai_iced_tea.png" alt="Thai Iced Tea" class="left-image">
-                <img src="assets/images/pug_thai.png" alt="Thai Pug" class="pug-flavor">
-                <h2 class="flavor-name">Thai Iced Tea</h4>
-                <p class="flavor-description">Satisfy your sweet and spicy cravings with our Thai Tea
+                <img src="assets/images/pug_thai.png" alt="Thai Pug" class="pug-flavor-left">
+                <h2 class="flavor-name-left">Thai Iced Tea</h4>
+                <p class="flavor-description-left">Satisfy your sweet and spicy cravings with our Thai Tea
                   made with strongly-brewed black tea with hints of cardamom, star anise, and tamarind.</p>
-                <p>Best served with:</p>
-                <img src="assets/images/tapioca.png" alt="Tapioca" class="toppings">
-                <p>Tapioca</p>
-                <img src="assets/images/pudding.png" alt="Pudding" class="toppings">
-                <p>Pudding</p>
-                <button type="button">Learn More</button>
+                <p class="served-left">Best served with:</p>
+                <span class="topping-one">
+                    <img src="assets/images/tapioca.png" alt="Tapioca" class="toppings-left">
+                    <p class="topping-name-left">Tapioca</p>
+                </span>
+                <span class="topping-two">
+                    <img src="assets/images/pudding.png" alt="Pudding" class="toppings-left">
+                    <p class="topping-name-left">Pudding</p>
+                </span>
+                <button class="button-left">Learn More</button>
             </div>
 
             <div class="half matcha-tea">
@@ -114,7 +121,7 @@
                 <p>Grass Jelly</p>
                 <img src="assets/images/tapioca.png" alt="Tapioca" class="toppings">
                 <p>Tapioca</p>
-                <button type="button">Learn More</button>
+                <button class="button-right">Learn More</button>
             </div>
         </section>
 
@@ -157,24 +164,27 @@
         <section class="container visit-us">
             <img src="assets/images/map.png" alt="map" class="map">
             <img src="assets/images/location.png" alt="location sign" class="sign">
-            <h2>Visit Us</h2>
-            <h5>PUGGLE TEA NYC</h5>
-            <p><strong>1123 PRINCE ST.,
-              NEW YORK, NY 10012</strong></p>
-            <ul>
-                <li>Monday - Friday: 10 AM to 9 PM</li>
-                <li>Saturday: 10 AM to 9 PM</li>
-                <li>Sunday: 10 AM to 7 PM</li>
-            </ul>
+            <div class="location-info">
+                <h2>Visit Us</h2>
+                <h5>PUGGLE TEA NYC</h5>
+                <p><strong>1123 PRINCE ST.,<br>
+                  NEW YORK, NY 10012</strong></p>
+                <ul>
+                    <li>Monday - Friday: 10 AM to 9 PM</li>
+                    <li>Saturday: 10 AM to 9 PM</li>
+                    <li>Sunday: 10 AM to 7 PM</li>
+                </ul>
+            </div>
         </section>
 
-        <footer>
-            <div class="container icons">
+        <footer class="container">
+            <div class="icons">
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-yelp"></i></a>
                 <a href="#"><i class="fa fa-instagram"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
                 <a href="#"><i class="fa fa-envelope-o"></i></a>
+            </div>
                 <img src="assets/images/logo_footer.png" alt="logo" class="footer-logo">
                 <p class="copyright">&copy; 2017 PUGGLE TEA<br>All rights reserved</p>
             </div>
