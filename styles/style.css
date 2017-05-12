@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 19px;
     font-weight: 400;
 }
@@ -38,7 +38,7 @@ p {
 button {
     width: 200px;
     height: 40px;
-    font-size: 14px;
+    font-size: 1rem;
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     background-color: #A4EAE6;
@@ -88,7 +88,7 @@ button {
 }
 
 .hero-title {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     text-align: center;
 }
@@ -114,9 +114,10 @@ button {
 .hero-image::after {
     display: block;
     position: relative;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%); -180deg, #EAEAEA 31%, #C3C3C3 84%, #7A7A7A 100%;
-    margin-top: -150px;
-    height: 150px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%,rgba(246,246,246,0.43) 18%,rgba(237,237,237,1) 100%);
+    /*background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%); -180deg, #EAEAEA 31%, #C3C3C3 84%, #7A7A7A 100%;*/
+    margin-top: -600px;
+    height: 600px;
     width: 100%;
     content: '';
 }
@@ -137,7 +138,7 @@ section.about .about-title span {
 }
 
 .about-title {
-    font-size: 36px;
+    font-size: 2rem;
     text-align: center;
     padding-top: 25px;
     font-weight: 100;
@@ -181,6 +182,7 @@ img.about-heart {
 .left-image {
     float: left;
     padding-left: 5%;
+    max-width: 100%;
 }
 
 .pug-flavor-left {
@@ -594,7 +596,7 @@ footer {
 }
 
 .icons a {
-    font-size: 28px;
+    font-size: 2rem;
     color: #3A2815;
     padding: 0 0.5%;
 }
@@ -610,3 +612,44 @@ footer {
     text-align: center;
     padding-bottom: 20px;
 }
+
+ /* MEDIA QUERIES */
+
+ @media (min-width: 425px) {
+    html {
+        font-size: 105%;
+    }
+    .landing {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .hero-logo {
+        padding-top: 16%;
+    }
+    .hero-title {
+        font-size: 2rem;
+        margin: 4% 17% 0;
+    }
+    .hero-details {
+        margin-top: -70%;
+        margin-bottom: 0%;
+    }
+    .hero-image {
+        max-height: 100%;
+    }
+    .one-third {
+        max-width: 70%;
+    }
+    .left-image {
+        max-width: 95%;
+    }
+    .pug-flavor-left {
+        margin-left: 14%;
+    }
+
+ }
+
+ /* Large screens (1024px) */
+ @media (min-width: 1024px) {
+    html { font-size: 120%; }
+ }
