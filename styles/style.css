@@ -53,32 +53,6 @@ button {
     padding: 0 20px;
 }
 
-/* GRID */
-/*.container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
-}
-
-.container:before,
-.container:after {
-    content: " ";
-    display: table;
-}
-.container:after {
-    clear:both;
-}
-
-.one-third {
-    width: 96%;
-    float: left;
-    position: relative;
-    min-height: 1px;
-    margin: 0 2% 20px;
-}*/
-
 /* HERO */
 .hero-logo {
     display: block;
@@ -172,17 +146,21 @@ img.about-heart {
 
 .half {
     padding-top: 20px;
+    width: 100%;
 }
 
 .limited {
     text-transform: uppercase;
     color: #A4EAE6;
+    margin: 17px 0 0 21px;
+    float: left;
+    font-size: 22px;
+
 }
 
 .left-image {
     float: left;
     padding-left: 5%;
-    max-width: 100%;
 }
 
 .pug-flavor-left {
@@ -190,15 +168,9 @@ img.about-heart {
     float: left;
 }
 
-.rose-tea .right-content {
+.right-content {
     float: left;
     width: 46%;
-}
-
-.rose-tea .limited {
-    margin: 17px 0 0 21px;
-    float: left;
-    font-size: 22px;
 }
 
 .rose-tea .flavor-name {
@@ -207,6 +179,7 @@ img.about-heart {
     text-transform: uppercase;
     font-weight: 300;
     margin: 9px 19px;
+    width: 50%;
 }
 
 .rose-tea .flavor-description {
@@ -249,7 +222,7 @@ img.about-heart {
 .button-left {
     float: left;
     margin-top: 110px;
-    margin-left: -178px;
+    margin-left: -190px;
 }
 
 /* MILK TEA */
@@ -257,12 +230,12 @@ img.about-heart {
     clear: both;
 }
 
-img.right-image {
+.right-image {
     float: right;
     margin-right: 5%;
 }
 
-.milk-tea .left-content {
+.left-content {
     width: 46%;
     margin-left: 5%;
 }
@@ -278,6 +251,7 @@ img.right-image {
 }
 
 .milk-tea h2 {
+    width: 40%;
     float: left;
     font-size: 36px;
     text-transform: uppercase;
@@ -319,7 +293,7 @@ img.right-image {
     float: left;
 }
 
-.button-2 {
+.button-right {
     float: left;
     margin-top: 10px;
 }
@@ -329,17 +303,13 @@ img.right-image {
     clear: both;
 }
 
-.thai-tea .right-content {
-    float: left;
-    width: 46%;
-}
-
 .thai-tea h2 {
     float: left;
     font-size: 36px;
     text-transform: uppercase;
     font-weight: 300;
     margin: 30px 20px;
+    width: 53%;
 }
 
 .thai-tea .flavor-description {
@@ -384,16 +354,13 @@ img.right-image {
     float: left;
 }
 
-.matcha-tea .left-content {
-    width: 46%;
-    margin-left: 5%;
-}
 .matcha-tea .flavor-name {
     float: left;
     font-size: 36px;
     text-transform: uppercase;
     font-weight: 300;
     margin: 30px 20px;
+    width: 30%;
 }
 
 .matcha-tea .flavor-description {
@@ -436,12 +403,6 @@ img.right-image {
     float: left;
 }
 
-.matcha-tea .button-4 {
-    float: left;
-    margin-top: 11px;
-}
-
-
 /* PUG OF THE MONTH */
 .potm {
     background-color: #A4EAE6;
@@ -462,6 +423,7 @@ img.right-image {
     margin: 5% 2% 1%;
     float: left;
     font-weight: 100;
+    width: 36%;
 }
 section.potm h2 span {
     font-weight: 700;
@@ -542,7 +504,7 @@ section.potm h2 span {
 section.visit-us {
     background-color: #FFFFFF;
     overflow: auto;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
 }
 
 img.map {
@@ -593,6 +555,7 @@ footer {
 .icons {
     text-align: center;
     padding-top: 20px;
+    margin-bottom: 2%;
 }
 
 .icons a {
@@ -615,9 +578,139 @@ footer {
 
  /* MEDIA QUERIES */
 
- @media (min-width: 425px) {
+ /* Tablet (768px) */
+ @media (min-width: 436px) and (max-width: 1024px) {
     html {
-        font-size: 105%;
+        font-size: 110%;
+    }
+    .one-third {
+        max-width: 60%;
+    }
+    .left-image {
+        padding-left: 0%;
+    }
+    .right-image {
+        margin-right: 0%;
+    }
+    .right-content, .left-content {
+        width: 100%;
+    }
+    .pug-flavor-left, .pug-flavor {
+        margin-top: 4%;
+    }
+    .limited {
+        margin: 40px 0 0 21px;
+    }
+    .rose-tea .flavor-description {
+        padding-left: 5px;
+        padding-right: 5%;
+    }
+    .served-left {
+        margin-left: 26px;
+    }
+    .rose-tea .button-left {
+        margin-left: -174px;
+    }
+    .rose-tea .fruit-1 {
+        margin-left: -122px;
+    }
+    .rose-tea .name-fruit-1 {
+        margin-left: -131px;
+    }
+    .left-image, .right-image {
+        width: 100%;
+    }
+    .milk-tea h2 {
+        margin-top: 10%;
+    }
+    .milk-tea .flavor-description {
+        width: 92%;
+    }
+    .rose-tea .tapioca-1 {
+        float: left;
+        margin-top: 17px;
+        margin-left: -24px;
+    }
+    .rose-tea .tapioca-1 {
+        margin-left: -24px;
+    }
+    .thai-tea h2 {
+        margin: 65px 20px;
+    }
+    .thai-tea .flavor-description {
+        padding-right: 4%;
+        width: 95%;
+    }
+    .thai-tea .tapioca-3 {
+        margin-left: -130px;
+    }
+    .thai-tea .button-left {
+        margin-left: -180px;
+    }
+    .thai-tea .name-tapioca-3 {
+        margin-left: -132px;
+    }
+    .thai-tea .pudding-3 {
+        margin-left: -23px;
+    }
+    .flavors, .potm {
+        padding-bottom: 5%;
+    }
+    .chloe-image {
+        margin-left: 7%;
+        width: 86%;
+    }
+    .chloe-description {
+        width: 85%;
+        margin-left: 43px;
+    }
+    .chloe {
+        margin: 0% 8% 3%;
+        width: 53%;
+    }
+    .potm button {
+        margin-left: 45px;
+    }
+    .insta-image {
+        width: 50%;
+        height: 50%;
+    }
+    .test-one, .test-two {
+        margin-left: 18%;
+    }
+    img.map {
+        margin-left: 0;
+        width: 100%;
+    }
+    img.sign {
+        margin-left: 0%;
+        padding-top: 2%;
+        width: 100%;
+    }
+    .location-info {
+        width: 87%;
+    }
+    section.visit-us h5 {
+        margin: 4% 13% 8%;
+        float: left;
+    }
+    section.visit-us p {
+        margin: -5% 13% 0;
+        float: left;
+    }
+    .visit-us ul {
+        float: right;
+        margin-top: -20%;
+    }
+    section.visit-us h2 {
+        float: left;
+        margin: 5% 13% 0;
+    }
+}
+
+@media (max-width: 435px) {
+    html {
+        font-size: 100%;
     }
     .landing {
         padding-left: 2%;
@@ -641,15 +734,155 @@ footer {
         max-width: 70%;
     }
     .left-image {
-        max-width: 95%;
+        max-width: 100%;
+        padding-left: 0%;
+    }
+    .flavors {
+        padding-bottom: 45px;
     }
     .pug-flavor-left {
-        margin-left: 14%;
+        display: none;
     }
-
- }
-
- /* Large screens (1024px) */
- @media (min-width: 1024px) {
-    html { font-size: 120%; }
- }
+    .right-content {
+        width: 100%;
+    }
+    .limited {
+        margin: 17px 0 0 0px;
+    }
+    .rose-tea .flavor-name {
+        margin: 9px 0px;
+    }
+    .rose-tea .flavor-description {
+        width: 100%;
+        padding-left: 0;
+    }
+    .served-left {
+        margin-left: 0px;
+    }
+    .rose-tea .fruit-1 {
+        margin-left: -124px;
+    }
+    .rose-tea .name-fruit-1 {
+        margin-left: -130px;
+    }
+    .button-left {
+        margin-left: -190px;
+    }
+    .right-image {
+        margin-right: 0%;
+        width: 100%;
+    }
+    .pug-flavor {
+        display: none;
+    }
+    .milk-tea h2 {
+        margin: 9px 0px;
+        width: 70%;
+        margin-left: -5%;
+    }
+    .left-content {
+        width: 100%;
+    }
+    .milk-tea .flavor-description {
+        width: 100%;
+        margin-left: -4%;
+        padding-top: 3px;
+    }
+    .milk-tea .served-right {
+        margin-left: -4%;
+    }
+    .button-right {
+        margin-left: -5%;
+      }
+    .milk-tea .tapioca-2 {
+        margin-left: -3%;
+    }
+    .milk-tea .name-tapioca-2 {
+        margin: 0 -7px 0;
+    }
+    .milk-tea .name-jelly-2 {
+        margin: -20px 0 0 88px;
+    }
+    .milk-tea .jelly-2 {
+        margin-left: 96px;
+    }
+    .thai-tea .flavor-name {
+        margin: 9px 0px;
+        width: 80%;
+    }
+    .thai-tea .flavor-description {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .thai-tea .tapioca-3 {
+        margin-left: -124px;
+    }
+    .thai-tea .name-tapioca-3 {
+        margin-left: -124px;
+    }
+    .matcha-tea .flavor-name {
+        margin: 9px 0px;
+        width: 80%;
+        margin-left: -5%;
+    }
+    .matcha-tea .flavor-description {
+        margin-left: -13px;
+        width: 100%;
+    }
+    .matcha-tea .served-right {
+        margin-left: -13px;
+    }
+    .matcha-tea .pudding-4 {
+        margin-left: -3%;
+    }
+    .matcha-tea .name-pudding-4 {
+        margin: 0 -7px 0;
+    }
+    .matcha-tea .jelly-4 {
+        margin-left: 96px;
+    }
+    .matcha-tea .name-jelly-4 {
+        margin: -20px 0 0 88px;
+    }
+    .potm {
+        padding: 5px 0 35px 0;
+    }
+    .chloe-image {
+        width: 88%;
+        margin-left: 7%;
+    }
+    .chloe {
+        margin: 5% 7% 1%;
+        width: 80%;
+    }
+    .chloe-description {
+        width: 87%;
+        margin-left: 30px;
+    }
+    .potm button {
+        margin-left: 32px;
+    }
+    .insta-image {
+        width: 50%;
+        height: 50%;
+    }
+    .test-one, .test-two {
+        width: 296px;
+    }
+    img.map, img.sign {
+        width: 97%;
+        margin-left: 9px;
+    }
+    section.visit-us h2 {
+        margin: 15% 6% 0;
+    }
+    section.visit-us h5 {
+        margin: 10% 6%;
+    }
+    section.visit-us p {
+        margin: -5% 6% 0;
+    }
+    .visit-us ul {
+        margin-left: -8%;
+    }
+}
