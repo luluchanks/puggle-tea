@@ -74,6 +74,8 @@ button {
 .hero-details {
     margin-top: -530px;
     margin-bottom: 110px;
+    z-index: 1;
+    position: relative;
 }
 
 .hero-image {
@@ -256,8 +258,8 @@ img.about-heart {
     padding-top: 8px;
 }
 
-.milk-tea h2 {
-    width: 40%;
+h2.flavor-name {
+    width: 50%;
     float: left;
     font-size: 36px;
     text-transform: uppercase;
@@ -309,14 +311,14 @@ img.about-heart {
     clear: both;
 }
 
-.thai-tea h2 {
+/*.thai-tea h2 {
     float: left;
     font-size: 36px;
     text-transform: uppercase;
     font-weight: 300;
     margin: 30px 20px;
     width: 53%;
-}
+}*/
 
 .thai-tea .flavor-description {
     float: right;
@@ -360,14 +362,14 @@ img.about-heart {
     float: left;
 }
 
-.matcha-tea .flavor-name {
+/*.matcha-tea .flavor-name {
     float: left;
     font-size: 36px;
     text-transform: uppercase;
     font-weight: 300;
     margin: 30px 20px;
     width: 30%;
-}
+}*/
 
 .matcha-tea .flavor-description {
     clear: left;
@@ -486,17 +488,12 @@ section.potm h2 span {
     font-style: italic;
 }
 
-.test-one {
-    float: left;
-    width: 350px;
-    margin-left: 7%;
+.testimonial div {
+  float: left;
+  width: 350px;
+  margin-left: 7%;
 }
 
-.test-two {
-    float: left;
-    margin-left: 10%;
-    width: 350px;
-}
 
 .name {
     float: right;
@@ -607,6 +604,11 @@ footer {
     .limited {
         margin: 40px 0 0 21px;
     }
+
+    h2.flavor-name {
+      width: 100%;
+    }
+
     .rose-tea .flavor-description {
         padding-left: 5px;
         padding-right: 5%;
