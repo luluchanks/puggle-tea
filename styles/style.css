@@ -72,8 +72,8 @@ button {
 }
 
 .hero-details {
-    margin-top: -530px;
-    margin-bottom: 110px;
+    margin-top: -56%;
+    margin-bottom: 11%;
     z-index: 1;
     position: relative;
 }
@@ -578,6 +578,10 @@ footer {
     html {
         font-size: 110%;
     }
+    .hero-details {
+        margin-top: -98%;
+        margin-bottom: 8%;
+    }
     .hero-logo {
         margin-top: 37%;
     }
@@ -674,14 +678,14 @@ footer {
     }
     .chloe-description {
         width: 83%;
-        margin-left: 55px;
+        margin-left: 8%;
     }
     .chloe {
         margin: 0% 8% 3%;
         width: 85%;
     }
     .potm button {
-        margin-left: 56px;
+        margin-left: 8%;
     }
     .insta-image {
         width: 50%;
@@ -726,15 +730,16 @@ footer {
         padding-right: 2%;
     }
     .hero-logo {
-        padding-top: 16%;
+        padding-top: 12%;
+        width: 45%;
     }
     .hero-title {
         font-size: 2rem;
         margin: 4% 17% 0;
     }
     .hero-details {
-        margin-top: -70%;
-        margin-bottom: 0%;
+        margin-top: -66%;
+        margin-bottom: 4%;
     }
     .hero-image {
         max-height: 100%;
@@ -785,7 +790,7 @@ footer {
     .pug-flavor {
         display: none;
     }
-    .milk-tea h2 {
+    .milk-tea .flavor-name {
         margin: 9px 0px;
         width: 100%;
     }
@@ -797,9 +802,9 @@ footer {
         margin-left: -4%;
         padding-top: 3px;
     }
-    .thai-tea .flavor-name {
+    .thai-tea .flavor-name, .matcha-tea .flavor-name {
         margin: 9px 0px;
-        width: 80%;
+        width: 100%;
     }
     .thai-tea .flavor-description-left {
         margin-left: 0px;
@@ -812,10 +817,6 @@ footer {
         margin-left: -110px;
     }
     .thai-tea .flavor-description {
-        width: 100%;
-    }
-    .matcha-tea .flavor-name {
-        margin: 9px 0px;
         width: 100%;
     }
     .matcha-tea .flavor-description-left {
