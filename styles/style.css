@@ -58,7 +58,7 @@ button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 100px;
+    margin-top: 35%;
 }
 
 .hero-title {
@@ -72,8 +72,7 @@ button {
 }
 
 .hero-details {
-    margin-top: -56%;
-    margin-bottom: 11%;
+    margin-top: -85%;
     z-index: 1;
     position: relative;
 }
@@ -81,6 +80,9 @@ button {
 .hero-image {
     max-width: 100%;
     margin: auto;
+    background: url(../assets/images/coffee_shop.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    height: 600px;
 }
 
 .hero-image .hero-background {
@@ -92,7 +94,6 @@ button {
     position: relative;
     background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%,rgba(246,246,246,0.43) 18%,rgba(237,237,237,1) 100%);
     /*background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%); -180deg, #EAEAEA 31%, #C3C3C3 84%, #7A7A7A 100%;*/
-    margin-top: -600px;
     height: 600px;
     width: 100%;
     content: '';
@@ -578,12 +579,9 @@ footer {
     html {
         font-size: 110%;
     }
-    .hero-details {
-        margin-top: -98%;
-        margin-bottom: 8%;
-    }
     .hero-logo {
         margin-top: 37%;
+        padding-top: 0;
     }
     .hero-title {
         font-size: 2rem;
@@ -721,6 +719,28 @@ footer {
     }
 }
 
+@media (max-width: 795px) {
+  .hero-logo {
+      margin-top: 25%;
+  }
+  .hero-image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-logo {
+    margin-top: 25%;
+    width: 45%;
+  }
+  .hero-image {
+    height: 400px;
+  }
+  .hero-details {
+    margin-top: -105%;
+  }
+}
+
 @media (max-width: 435px) {
     html {
         font-size: 100%;
@@ -731,18 +751,13 @@ footer {
     }
     .hero-logo {
         padding-top: 12%;
-        width: 45%;
     }
     .hero-title {
         font-size: 2rem;
         margin: 4% 17% 0;
     }
-    .hero-details {
-        margin-top: -66%;
-        margin-bottom: 4%;
-    }
     .hero-image {
-        max-height: 100%;
+      height: 300px;
     }
     .one-third {
         max-width: 70%;
